@@ -1,5 +1,8 @@
 # ⚖️ VakilBot – AI Legal Chatbot SaaS
 
+**🌍 Live Live Platform:** [https://vakil-bot.vercel.app](https://vakil-bot.vercel.app)
+**⚙️ Live Backend API:** [https://vakilbot-api.onrender.com](https://vakilbot-api.onrender.com)
+
 > **India's AI-powered legal chatbot** – embed it on any law firm website to provide 24/7 legal guidance grounded in Indian constitutional law.
 
 ---
