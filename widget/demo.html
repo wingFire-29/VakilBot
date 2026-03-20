@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharma & Associates – Legal Services | Demo with VakilBot</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Georgia', serif; background: #f9f5f0; color: #2c1810; }
+
+    .hero {
+      background: linear-gradient(135deg, #1a0a00 0%, #2d1515 50%, #1a0a00 100%);
+      color: white; padding: 80px 40px; text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: ''; position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero h1 { font-size: 3rem; font-weight: 300; letter-spacing: 0.05em; position: relative; }
+    .hero h1 span { color: #c9a96e; font-weight: 700; }
+    .hero p { font-size: 1.2rem; margin-top: 16px; color: rgba(255,255,255,0.7); position: relative; }
+    .hero .badge { 
+      display: inline-block; margin-top: 20px; padding: 8px 20px;
+      background: rgba(201,169,110,0.2); border: 1px solid rgba(201,169,110,0.5);
+      border-radius: 100px; font-size: 0.85rem; color: #c9a96e;
+      position: relative;
+    }
+
+    nav {
+      background: #1a0a00; padding: 16px 40px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    nav .logo { color: #c9a96e; font-size: 1.3rem; font-weight: 700; }
+    nav ul { list-style: none; display: flex; gap: 32px; }
+    nav ul li a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+    nav ul li a:hover { color: #c9a96e; }
+    
+    .container { max-width: 1100px; margin: 0 auto; padding: 60px 40px; }
+    
+    .practice-areas { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+    .practice-card {
+      background: white; border-radius: 12px; padding: 32px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+      border-left: 4px solid #c9a96e; transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .practice-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.12); }
+    .practice-card .icon { font-size: 2rem; margin-bottom: 16px; }
+    .practice-card h3 { font-size: 1.1rem; margin-bottom: 8px; color: #1a0a00; }
+    .practice-card p { color: #666; font-size: 0.9rem; line-height: 1.6; font-family: sans-serif; }
+
+    .section-title { font-size: 2rem; margin-bottom: 8px; }
+    .section-subtitle { color: #888; font-family: sans-serif; margin-bottom: 40px; font-size: 0.95rem; }
+
+    .ai-banner {
+      background: linear-gradient(135deg, #1a0a00, #2d1515);
+      color: white; padding: 48px; border-radius: 16px; margin: 60px 0;
+      display: flex; align-items: center; gap: 32px; flex-wrap: wrap;
+    }
+    .ai-banner .icon { font-size: 3rem; flex-shrink: 0; }
+    .ai-banner h3 { font-size: 1.5rem; margin-bottom: 8px; color: #c9a96e; }
+    .ai-banner p { color: rgba(255,255,255,0.75); font-family: sans-serif; line-height: 1.6; }
+    .ai-banner ul { margin-top: 12px; padding-left: 20px; color: rgba(255,255,255,0.7); font-family: sans-serif; }
+    .ai-banner ul li { margin-bottom: 6px; font-size: 0.9rem; }
+
+    footer { background: #1a0a00; color: rgba(255,255,255,0.5); padding: 32px 40px; text-align: center; font-size: 0.85rem; font-family: sans-serif; }
+    footer strong { color: #c9a96e; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">⚖️ Sharma & Associates</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Practice Areas</a></li>
+      <li><a href="#">Our Team</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h1>Justice <span>With Clarity</span></h1>
+    <p>Trusted legal counsel across India since 1998</p>
+    <div class="badge">🤖 Now with AI Legal Assistant – Ask any question, 24/7</div>
+  </div>
+
+  <div class="container">
+    <h2 class="section-title">Practice Areas</h2>
+    <p class="section-subtitle">Comprehensive legal services for individuals and businesses</p>
+    
+    <div class="practice-areas">
+      <div class="practice-card">
+        <div class="icon">🏠</div>
+        <h3>Family & Civil Law</h3>
+        <p>Divorce, custody disputes, property settlements, succession, and inheritance matters under Indian personal laws.</p>
+      </div>
+      <div class="practice-card">
+        <div class="icon">🏢</div>
+        <h3>Corporate Law</h3>
+        <p>Company incorporation, mergers, acquisitions, contracts, regulatory compliance, and startup advisory services.</p>
+      </div>
+      <div class="practice-card">
+        <div class="icon">⚖️</div>
+        <h3>Criminal Defense</h3>
+        <p>Expert representation in criminal cases, bail applications, FIR quashing, and appeals before High Courts and Supreme Court.</p>
+      </div>
+      <div class="practice-card">
+        <div class="icon">🛒</div>
+        <h3>Consumer Rights</h3>
+        <p>Protection against unfair trade practices, defective products, and filing complaints before Consumer Commissions.</p>
+      </div>
+      <div class="practice-card">
+        <div class="icon">🏡</div>
+        <h3>Property & Real Estate</h3>
+        <p>Land acquisition, title disputes, RERA compliance, builder disputes, and property documentation.</p>
+      </div>
+      <div class="practice-card">
+        <div class="icon">💼</div>
+        <h3>Labour Law</h3>
+        <p>Employment contracts, wrongful termination, PF/ESI disputes, and industrial tribunal representations.</p>
+      </div>
+    </div>
+
+    <div class="ai-banner">
+      <div class="icon">🤖</div>
+      <div>
+        <h3>AI Legal Assistant – Available 24/7</h3>
+        <p>Our firm uses <strong>VakilBot</strong>, an AI trained exclusively on Indian law texts. Get instant answers about your legal rights before scheduling a consultation.</p>
+        <ul>
+          <li>✓ Answers questions on Indian Constitution, IPC, Consumer Law, and more</li>
+          <li>✓ Explains legal concepts in simple language</li>
+          <li>✓ Cites specific Acts and Articles in responses</li>
+          <li>✓ Available 24/7 – no appointment needed</li>
+        </ul>
+        <p style="margin-top: 12px; font-size: 0.85rem; color: rgba(255,255,255,0.5);">
+          👉 Click the chat button in the bottom-right corner to start!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p><strong>Sharma & Associates</strong> · 14, Lawyers' Colony, New Delhi – 110001 · +91 98765 43210</p>
+    <p style="margin-top: 8px;">Powered by <strong>VakilBot AI</strong> Legal Assistant · © 2025 All rights reserved</p>
+  </footer>
+
+  <!-- ✅ VakilBot Widget Embed – Replace YOUR_EMBED_KEY with actual key from dashboard -->
+  <script 
+    src="../widget/chatbot-widget.js" 
+    data-key="demo_key_replace_with_real"
+    data-api="http://localhost:8000"
+    data-firm="Sharma & Associates"
+    data-color="#c9a96e">
+  </script>
+
+</body>
+</html>

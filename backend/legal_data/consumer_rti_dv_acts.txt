@@ -1,0 +1,211 @@
+CONSUMER PROTECTION ACT, 2019 - KEY PROVISIONS
+Source: Consumer Protection Act, 2019 (No. 35 of 2019)
+(Replaced the Consumer Protection Act, 1986)
+
+================================================================================
+DEFINITIONS
+================================================================================
+
+Section 2(7) - Consumer
+"Consumer" means any person who—
+(i) buys any goods for a consideration which has been paid or promised or partly paid and 
+partly promised, or under any system of deferred payment and includes any user of such goods 
+other than the person who buys such goods for consideration paid or promised, but does not 
+include a person who obtains such goods for resale or for any commercial purpose; or
+(ii) hires or avails of any service for a consideration which has been paid or promised or 
+partly paid and partly promised, or under any system of deferred payment and includes any 
+beneficiary of such service other than the person who hires or avails of the services for 
+consideration paid or promised.
+
+Online consumers are also protected – buying goods/services online is covered.
+
+Section 2(11) - Deficiency
+"Deficiency" means any fault, imperfection, shortcoming or inadequacy in the quality, nature 
+and manner of performance which is required to be maintained by or under any law for the 
+time being in force or has been undertaken to be performed by a person in pursuance of a 
+contract or otherwise in relation to any service.
+
+Section 2(46) - Unfair trade practice
+"Unfair trade practice" means a trade practice which, for the purpose of promoting the sale, 
+use or supply of any goods or for the provision of any service, adopts any unfair method or 
+unfair or deceptive practice.
+
+================================================================================
+CONSUMER RIGHTS (Section 2(9))
+================================================================================
+
+Every consumer has the following rights:
+(i) Right to be protected against marketing of goods, products or services which are 
+hazardous to life and property;
+(ii) Right to be informed about the quality, quantity, potency, purity, standard and price 
+of goods, products or services;
+(iii) Right to be assured, wherever possible, access to a variety of goods, products or 
+services at competitive prices;
+(iv) Right to be heard and to be assured that consumer's interests will receive due 
+consideration at appropriate forums;
+(v) Right to seek redressal against unfair trade practice or restrictive trade practices 
+or unscrupulous exploitation of consumers;
+(vi) Right to consumer awareness.
+
+================================================================================
+CONSUMER DISPUTE REDRESSAL COMMISSIONS
+================================================================================
+
+Section 28 - District Consumer Disputes Redressal Commission
+- Jurisdiction: Complaints where value of goods/services ≤ Rs. 1 crore
+- Application: Filed by consumer, consumer association, or government
+- Time limit: File within 2 years of cause of action
+
+Section 42 - State Consumer Disputes Redressal Commission
+- Jurisdiction: Complaints where value > Rs. 1 crore but ≤ Rs. 10 crore
+- Also handles appeals against District Commission orders
+
+Section 58 - National Consumer Disputes Redressal Commission
+- Jurisdiction: Complaints where value > Rs. 10 crore
+- Also handles appeals against State Commission orders
+- Final appeal lies with Supreme Court of India
+
+================================================================================
+E-COMMERCE RULES
+================================================================================
+
+Consumer Protection (E-Commerce) Rules, 2020:
+- E-commerce platforms must display seller information, product details, and prices clearly
+- No fraudulent flash sales
+- No fake reviews
+- Mandatory grievance officer appointment
+- Returns and refund policy must be clearly stated
+- Liability of marketplace e-commerce entities for seller fraud
+
+================================================================================
+PRODUCT LIABILITY (Chapter VI)
+================================================================================
+
+Section 82 - Product liability action
+A product liability action may be brought by a complainant against a product manufacturer, 
+product service provider or product seller, as the case may be, for any harm caused to him 
+on account of a defective product.
+
+Section 84 - Liability of product manufacturer
+A product manufacturer shall be liable in a product liability action, if—
+(a) the product contains a manufacturing defect; or
+(b) the product is defective in design; or
+(c) there is a deviation from manufacturing specifications; or
+(d) the product does not conform to the express warranty; or
+(e) the product fails to contain adequate instructions of correct usage.
+
+================================================================================
+RIGHT TO INFORMATION ACT, 2005 - KEY PROVISIONS
+================================================================================
+
+Section 2(f) - Information
+"Information" means any material in any form, including records, documents, memos, e-mails, 
+opinions, advices, press releases, circulars, orders, logbooks, contracts, reports, papers, 
+samples, models, data material held in any electronic form and information relating to any 
+private body which can be accessed by a public authority under any other law.
+
+Section 2(h) - Public Authority
+"Public authority" means any authority or body or institution of self-government established 
+or constituted by or under the Constitution; or by any other law made by Parliament; or by 
+any law made by State Legislature; or by notification issued or order made by the appropriate 
+Government.
+
+Section 3 - Right to information
+Subject to the provisions of this Act, all citizens shall have the right to information.
+
+Section 4 - Obligations of public authorities
+Every public authority shall:
+(a) maintain all its records duly catalogued and indexed;
+(b) publish all relevant facts while formulating important policies or announcing decisions;
+(c) provide reasons for its administrative or quasi-judicial decisions to affected persons.
+
+Section 6 - Request for obtaining information
+A person, who desires to obtain any information under this Act, shall make a request in 
+writing or through electronic means in English or Hindi or in the official language of the 
+area in which the application is being made, accompanying such fee as may be prescribed.
+No reason or other personal details need be given while seeking information.
+
+Section 7 - Disposal of request
+The Central Public Information Officer or State Public Information Officer shall, within 
+thirty days of the receipt of a request, provide the information on payment of such fee as 
+may be prescribed. If information concerns life or liberty, it must be provided within 48 hours.
+
+Section 8 - Exemption from disclosure of information
+The following information is exempt from disclosure:
+(a) information affecting sovereignty and integrity of India
+(b) information expressly forbidden by court
+(c) information causing breach of privilege of Parliament or a State Legislature
+(d) commercial confidence, trade secrets
+(e) information available in fiduciary relationship
+(f) information received in confidence from foreign government
+(g) information endangering life or physical safety
+(h) information impeding investigation of offences
+(i) cabinet papers including council of ministers deliberations
+(j) personal information causing unwarranted invasion of privacy
+
+Section 19 - Appeal
+An appeal to the First Appellate Authority must be filed within 30 days of:
+- Receiving a decision, or
+- Expiry of time allowed for decision
+
+Second appeal lies with Central Information Commission or State Information Commission 
+within 90 days.
+
+================================================================================
+DOMESTIC VIOLENCE ACT, 2005 - KEY PROVISIONS
+================================================================================
+
+Protection of Women from Domestic Violence Act, 2005
+
+Section 2(a) - Aggrieved person
+"Aggrieved person" means any woman who is, or has been, in a domestic relationship with 
+the respondent and who alleges to have been subjected to any act of domestic violence by 
+the respondent.
+
+Section 3 - Definition of domestic violence
+Any act, omission or commission or conduct of the respondent shall constitute domestic 
+violence if it:
+(a) harms or injures or endangers the health, safety, life, limb or well-being, whether 
+mental or physical, of the aggrieved person or tends to do so (physical abuse);
+(b) harasses, harms, injures or endangers the aggrieved person with a view to coerce her 
+or any other person related to her to meet any unlawful demand for dowry or other property 
+or valuable security (emotional abuse);
+(c) has the effect of threatening the aggrieved person or any person related to her by any 
+conduct mentioned in clause (a) or clause (b); or
+(d) otherwise injures or causes harm, whether physical or mental, to the aggrieved person 
+(sexual abuse, verbal abuse, economic abuse).
+
+Section 12 - Application to Magistrate
+An aggrieved person or a Protection Officer or any other person on behalf of the aggrieved 
+person may present an application to the Magistrate seeking one or more reliefs under this Act.
+
+Section 17 - Right to reside in a shared household
+Every woman in a domestic relationship shall have the right to reside in the shared household, 
+whether or not she has any right, title or beneficial interest in the same. The respondent 
+shall not dispossess or in any other manner disturb the possession of the aggrieved person.
+
+Section 18 - Protection orders
+The Magistrate may, after giving the aggrieved person and the respondent an opportunity of 
+being heard and on being prima facie satisfied that domestic violence has taken place or is 
+likely to take place, pass a protection order in favour of the aggrieved person.
+
+Section 19 - Residence orders  
+The Magistrate may, on being satisfied that domestic violence has taken place, pass a 
+residence order restraining the respondent from dispossessing or in any other manner 
+disturbing the possession of the aggrieved person from the shared household.
+
+Section 20 - Monetary relief
+The Magistrate may direct the respondent to pay monetary relief to meet the expenses 
+incurred and losses suffered by the aggrieved person and any child of the aggrieved person 
+as a result of the domestic violence.
+
+Section 22 - Compensation orders
+The Magistrate may on an application being made by the aggrieved person, pass an order 
+directing the respondent to pay compensation and damages for the injuries and mental torture 
+inflicted by acts of domestic violence.
+
+Section 31 - Offence of breach of protection order
+A breach of protection order, or of an interim protection order, by the respondent shall 
+be an offence under this Act and shall be punishable with imprisonment of either description 
+for a term which may extend to one year, or with fine which may extend to twenty thousand 
+rupees, or with both.
