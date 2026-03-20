@@ -7,6 +7,15 @@
 
 ---
 
+## ✨ Key Features
+- **RAG-Powered LLM Backend**: Built with LangChain, FAISS, and Groq (Llama 3 70B) to accurately answer questions based exclusively on Indian legal corpora (IPC, CrPC, Constitution).
+- **Embeddable JS Widget**: A lightweight, zero-dependency widget that any law firm can add to their site via a simple script tag and a secure API key.
+- **Law Firm Dashboard**: A React dashboard for lawyers to regenerate API keys, update firm profiles, and view real-time chat analytics.
+- **Analytics & Session Viewer**: Visual charts tracking chat volume, and a modal drill-down to review exact conversations between clients and the AI.
+- **Production-Ready Deployment**: Configured with PostgreSQL via Supabase, WhiteNoise for static files, and deployed seamlessly on Render and Vercel.
+
+---
+
 ## 🏗️ Architecture
 
 ```
