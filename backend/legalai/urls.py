@@ -3,7 +3,7 @@ from django.urls import path, include
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse("<h1>VakilBot Backend Server is Running!</h1><p>The backend only serves an API. Please visit the frontend at <a href='http://localhost:5173/'>http://localhost:5173/</a>.</p>")
+    return HttpResponse("<h1>VakilBot Backend Server is Running!</h1><p>The backend only serves an API. Please visit the frontend at <a href='https://vakil-bot.vercel.app/'>https://vakil-bot.vercel.app/</a>.</p>")
 
 urlpatterns = [
     path('', home, name='home'),

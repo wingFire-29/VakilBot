@@ -55,8 +55,9 @@ export default function ChatDemo() {
       } else {
         setMessages(prev => [...prev, { role: 'assistant', content: '❌ ' + (data.error || 'Something went wrong.'), sources: [] }])
       }
-    } catch {
-      setMessages(prev => [...prev, { role: 'assistant', content: '⚠️ Unable to connect. Make sure the backend server is running on localhost:8000.', sources: [] }])
+    } catch (e) {
+      console.error(e);
+      setMessages(prev => [...prev, { role: 'assistant', content: '⚠️ Unable to connect to the API. It may still be starting up, or there is a server error.', sources: [] }])
     }
     setLoading(false)
   }
