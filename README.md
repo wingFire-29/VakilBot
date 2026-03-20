@@ -145,7 +145,7 @@ Add this to any law firm website:
 
 ```html
 <script 
-  src="https://yourserver.com/widget/chatbot-widget.js"
+  src="https://vakil-bot.vercel.app/chatbot-widget.js"
   data-key="YOUR_FIRM_EMBED_KEY"
   data-firm="Sharma & Associates"
   data-color="#6366f1">
