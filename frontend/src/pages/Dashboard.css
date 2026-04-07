@@ -431,10 +431,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-.analytics-card { }
-
 .metrics-list { display: flex; flex-direction: column; gap: 18px; margin-top: 16px; }
-.metric-row { }
 .metric-row__top {
   display: flex;
   justify-content: space-between;
