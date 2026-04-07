@@ -19,6 +19,23 @@ export default function Navbar() {
   // Close mobile menu on route change
   useEffect(() => { setMobileOpen(false) }, [location])
 
+  // Scroll to a section on the landing page
+  const scrollToSection = (e, sectionId) => {
+    e.preventDefault()
+    setMobileOpen(false)
+    if (location.pathname !== '/') {
+      // Navigate to home first, then scroll after a short delay
+      navigate('/')
+      setTimeout(() => {
+        const el = document.getElementById(sectionId)
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }, 100)
+    } else {
+      const el = document.getElementById(sectionId)
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }
+
   const handleLogout = () => {
     logout()
     navigate('/')
@@ -34,10 +51,10 @@ export default function Navbar() {
 
         {/* Desktop links */}
         <div className="navbar__links">
-          <Link to="/#features" className="navbar__link">Features</Link>
-          <Link to="/#pricing" className="navbar__link">Pricing</Link>
+          <a href="#features" className="navbar__link" onClick={(e) => scrollToSection(e, 'features')}>Features</a>
+          <a href="#pricing" className="navbar__link" onClick={(e) => scrollToSection(e, 'pricing')}>Pricing</a>
           <Link to="/demo" className="navbar__link">Live Demo</Link>
-          <Link to="/#how" className="navbar__link">How It Works</Link>
+          <a href="#how" className="navbar__link" onClick={(e) => scrollToSection(e, 'how')}>How It Works</a>
         </div>
 
         {/* Desktop actions */}
@@ -69,10 +86,10 @@ export default function Navbar() {
       {/* Mobile menu */}
       {mobileOpen && (
         <div className="navbar__mobile">
-          <Link to="/#features" className="navbar__mobile-link">Features</Link>
-          <Link to="/#pricing" className="navbar__mobile-link">Pricing</Link>
+          <a href="#features" className="navbar__mobile-link" onClick={(e) => scrollToSection(e, 'features')}>Features</a>
+          <a href="#pricing" className="navbar__mobile-link" onClick={(e) => scrollToSection(e, 'pricing')}>Pricing</a>
           <Link to="/demo" className="navbar__mobile-link">Live Demo</Link>
-          <Link to="/#how" className="navbar__mobile-link">How It Works</Link>
+          <a href="#how" className="navbar__mobile-link" onClick={(e) => scrollToSection(e, 'how')}>How It Works</a>
           <div className="navbar__mobile-divider" />
           {token ? (
             <>

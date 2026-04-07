@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import './LandingPage.css'
@@ -42,6 +43,39 @@ const pricing = [
   },
 ]
 
+function ScrollToTopButton() {
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.pageYOffset > 300) {
+        setIsVisible(true)
+      } else {
+        setIsVisible(false)
+      }
+    }
+    window.addEventListener('scroll', toggleVisibility)
+    return () => window.removeEventListener('scroll', toggleVisibility)
+  }, [])
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+
+  return (
+    <button 
+      className={`scroll-to-top ${isVisible ? 'visible' : ''}`} 
+      onClick={scrollToTop}
+      aria-label="Scroll to top"
+    >
+      ↑
+    </button>
+  )
+}
+
 export default function LandingPage() {
   return (
     <div className="landing">
@@ -60,8 +94,8 @@ export default function LandingPage() {
             <span className="gradient-text">Built for Indian Law</span>
           </h1>
           <p className="hero__subtitle">
-            Embed an intelligent chatbot on your law firm's website — powered by RAG architecture, 
-            trained on the Indian Constitution, IPC, CrPC, and 10+ major acts. Your clients get 
+            Embed an intelligent chatbot on your law firm's website — powered by RAG architecture,
+            trained on the Indian Constitution, IPC, CrPC, and 10+ major acts. Your clients get
             instant, accurate legal guidance 24/7.
           </p>
           <div className="hero__cta">
@@ -88,7 +122,7 @@ export default function LandingPage() {
           <p className="section__eyebrow">The Widget</p>
           <h2 className="section__title">Looks beautiful on any website</h2>
           <p className="section__subtitle" style={{ margin: '0 auto 48px' }}>
-            A floating chat button appears on your firm's site. Clients click to ask their legal questions. 
+            A floating chat button appears on your firm's site. Clients click to ask their legal questions.
             The AI responds with cited Indian law references.
           </p>
           <div className="widget-mockup">
@@ -165,7 +199,7 @@ export default function LandingPage() {
       <section className="stats-section section">
         <div className="container">
           <div className="stats-grid">
-            {[['10+', 'Indian Laws Covered'],['50K+', 'Legal Questions Answered'],['200+', 'Law Firms Using VakilBot'],['< 2s', 'Average Response Time']].map(([n, l]) => (
+            {[['10+', 'Indian Laws Covered'], ['50K+', 'Legal Questions Answered'], ['200+', 'Law Firms Using VakilBot'], ['< 2s', 'Average Response Time']].map(([n, l]) => (
               <div key={l} className="stat-item">
                 <div className="stat-number gradient-text">{n}</div>
                 <div className="stat-label">{l}</div>
@@ -272,10 +306,10 @@ export default function LandingPage() {
               <p>India's premier AI legal chatbot platform. Built with ❤️ for Indian law firms.</p>
             </div>
             <div className="footer__links-grid">
-              <div><h4>Product</h4><a href="#">Features</a><a href="#">Pricing</a><Link to="/demo">Demo</Link></div>
+              <div><h4>Product</h4><a href="#features" onClick={(e) => { e.preventDefault(); document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' }) }}>Features</a><a href="#pricing" onClick={(e) => { e.preventDefault(); document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' }) }}>Pricing</a><Link to="/demo">Demo</Link></div>
               <div><h4>Legal</h4><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">GDPR</a></div>
               <div><h4>Company</h4><a href="#">About</a><a href="#">Blog</a><a href="#">Contact</a></div>
-            </div>
+            </div>  
           </div>
           <div className="divider" />
           <div className="footer__bottom">
@@ -284,6 +318,7 @@ export default function LandingPage() {
           </div>
         </div>
       </footer>
+      <ScrollToTopButton />
     </div>
   )
 }

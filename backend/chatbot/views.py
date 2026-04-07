@@ -67,6 +67,45 @@ class AskView(APIView):
                 client_email=serializer.validated_data.get('client_email', ''),
             )
 
+        # --- APPLY USAGE LIMITS ---
+        # 1. Demo usage without login (limit to 5 questions per session)
+        if not request.user.is_authenticated and embed_key == 'demo':
+            user_msg_count = session.messages.filter(role='user').count()
+            if user_msg_count >= 5:
+                # Save just the user's attempt for record, but don't ask the AI
+                Message.objects.create(session=session, role='user', content=question)
+                return Response({
+                    'session_id': str(session.session_id),
+                    'answer': "You've reached the limit of 5 free demo questions for this session. Please create an account to continue asking questions.",
+                    'sources': []
+                })
+        
+        # 2. Free Tier limits (100 messages/month for the firm)
+        if firm and firm.plan == 'free':
+            from django.utils import timezone
+            now = timezone.now()
+            # Count assistant messages for this firm this month
+            monthly_msg_count = Message.objects.filter(
+                session__firm=firm,
+                role='assistant',
+                timestamp__year=now.year,
+                timestamp__month=now.month
+            ).count()
+
+            if monthly_msg_count >= 100:
+                answer_text = "This law firm has reached its limit of 100 free questions for this month. Please ask the firm to upgrade to the Pro plan for unlimited usage."
+                if request.user.is_authenticated:
+                    answer_text = "⚠️ You have reached the limit of 100 messages for your Free plan this month. Please upgrade your plan in the dashboard settings to continue."
+                
+                # Save the user message anyway to show they tried
+                Message.objects.create(session=session, role='user', content=question)
+                return Response({
+                    'session_id': str(session.session_id),
+                    'answer': answer_text,
+                    'sources': []
+                })
+        # --------------------------
+
         # Build chat history for RAG
         chat_history = _get_chat_history(session)
 
